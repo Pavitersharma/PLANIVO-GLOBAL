@@ -75,10 +75,38 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="border border-[#e3dccf] bg-[#fdfbf7] p-12 hover:shadow-lg transition"
+              className="
+                group
+                border border-[#e3dccf]
+                bg-[#fdfbf7]
+                p-12
+                transition
+                duration-300
+                ease-out
+
+                hover:shadow-lg
+                hover:-translate-y-1
+
+                active:shadow-lg
+                active:-translate-y-1
+                active:bg-[#f8f5f0]
+              "
             >
               {/* Icon Box */}
-              <div className="w-14 h-14 border border-[#caa36a] flex items-center justify-center text-[#caa36a] text-xl mb-8">
+              <div
+                className="
+                  w-14 h-14
+                  border border-[#caa36a]
+                  flex items-center justify-center
+                  text-[#caa36a]
+                  text-xl
+                  mb-8
+                  transition
+
+                  group-hover:scale-110
+                  active:scale-110
+                "
+              >
                 {service.icon}
               </div>
 
@@ -99,7 +127,20 @@ const Services = () => {
             Need advanced or customized BIM solutions?
           </p>
 
-          <button className="border border-[#caa36a] px-14 py-4 text-sm tracking-widest uppercase hover:bg-[#caa36a] hover:text-white transition">
+          <button
+            className="
+              border border-[#caa36a]
+              px-14 py-4
+              text-sm tracking-widest uppercase
+              transition
+
+              hover:bg-[#caa36a]
+              hover:text-white
+
+              active:bg-[#caa36a]
+              active:text-white
+            "
+          >
             Explore More Services
           </button>
         </div>
