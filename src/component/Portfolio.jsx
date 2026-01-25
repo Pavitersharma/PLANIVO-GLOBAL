@@ -1,119 +1,142 @@
-import portfolio1 from "../assets/portfolio/portfolio-1.jpeg";
-import portfolio2 from "../assets/portfolio/portfolio-2.jpeg";
+import {
+  FaAward,
+  FaUsers,
+  FaClock,
+  FaUserCheck,
+  FaShieldAlt,
+  FaHandsHelping,
+} from "react-icons/fa";
 
-const Portfolio = () => {
- const projects = [
-  {
-    category: "Residential BIM",
-    title: "Modern Residential BIM Model",
-    image: portfolio1,
-  },
-  {
-    category: "Commercial BIM",
-    title: "Contemporary Commercial Facility",
-    image: portfolio2,
-  },
-  {
-    category: "Healthcare BIM",
-    title: "Advanced Hospital BIM Design",
-    image: "/projects/hospital-bim.jpg", // public folder
-  },
-  {
-    category: "Renovation & Retrofit",
-    title: "Existing Building As-Built BIM",
-    image: "/projects/renovation-bim.jpg", // public folder
-  },
-];
+const WhyChooseUs = () => {
+  const features = [
+    {
+      title: "Industry-Recognized Excellence",
+      description:
+        "Proven BIM expertise delivering accurate, coordinated, and reliable models for complex projects.",
+      icon: <FaAward />,
+    },
+    {
+      title: "Expert BIM Team",
+      description:
+        "A skilled team of BIM professionals with deep experience across architecture, structure, and MEP.",
+      icon: <FaUsers />,
+    },
+    {
+      title: "On-Time Delivery",
+      description:
+        "We follow structured workflows and milestones to ensure timely and predictable project delivery.",
+      icon: <FaClock />,
+    },
+    {
+      title: "Tailored BIM Solutions",
+      description:
+        "Every BIM model is customized to your project scope, standards, and execution requirements.",
+      icon: <FaUserCheck />,
+    },
+    {
+      title: "Quality & Compliance",
+      description:
+        "Strict QA/QC processes ensure models meet international BIM standards and client expectations.",
+      icon: <FaShieldAlt />,
+    },
+    {
+      title: "Client-Focused Approach",
+      description:
+        "Clear communication, transparency, and long-term partnerships are at the core of our process.",
+      icon: <FaHandsHelping />,
+    },
+  ];
 
   return (
-    <section className="bg-[#faf7f2] py-32">
+    <section className="bg-[#faf7f2] py-36">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-20">
-          <div>
-            <p className="text-xs tracking-widest text-[#caa36a] uppercase mb-4">
-              Our Portfolio
-            </p>
 
-            <h2 className="text-5xl font-serif text-black leading-tight">
-              Featured <br />
-              <span className="italic">Projects</span>
-            </h2>
-          </div>
+        {/* HEADER */}
+        <div className="text-center max-w-3xl mx-auto mb-24">
+          <p className="text-xs tracking-widest text-[#caa36a] uppercase mb-4">
+            Why Choose Us
+          </p>
 
-          <div className="mt-8 md:mt-0">
-            <button
-              className="
-                border border-[#2b2a28]
-                px-10 py-3
-                text-xs tracking-widest uppercase
-                transition
-                hover:bg-[#2b2a28]
-                hover:text-white
-                active:bg-[#2b2a28]
-                active:text-white
-              "
-            >
-              View All Projects →
-            </button>
-          </div>
+          <h2 className="text-5xl font-serif leading-tight mb-8">
+            The PLANIVO GLOBAL <br />
+            <span className="italic">Difference</span>
+          </h2>
+
+          <div className="w-16 h-px bg-[#caa36a] mx-auto mb-8"></div>
+
+          <p className="text-gray-600 leading-relaxed">
+            We combine technical expertise, precision modeling, and a
+            client-first mindset to deliver BIM solutions that drive
+            confidence and project success.
+          </p>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {projects.map((project, index) => (
+        {/* FEATURES GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-28">
+          {features.map((item, index) => (
             <div
               key={index}
               className="
-                group
-                relative
-                overflow-hidden
-                bg-black
-                cursor-pointer
+                bg-[#fdfbf7]
+                border border-[#e3dccf]
+                p-10
+                transition
+                hover:shadow-lg
               "
             >
-              {/* Image */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className="
-                  w-full
-                  h-[520px]
-                  object-cover
-                  transition
-                  duration-500
-                  group-hover:scale-105
-                  group-active:scale-105
-                "
-              />
-
-              {/* Overlay */}
-              <div
-                className="
-                  absolute inset-0
-                  bg-gradient-to-t
-                  from-black/70
-                  via-black/30
-                  to-transparent
-                "
-              ></div>
-
-              {/* Text */}
-              <div className="absolute bottom-10 left-10 right-10 text-white">
-                <p className="text-xs tracking-widest uppercase text-[#e5d3a3] mb-2">
-                  {project.category}
-                </p>
-
-                <h3 className="text-2xl font-serif leading-snug">
-                  {project.title}
-                </h3>
+              <div className="w-14 h-14 border border-[#caa36a] flex items-center justify-center text-[#caa36a] text-xl mb-8">
+                {item.icon}
               </div>
+
+              <h3 className="text-xl font-serif mb-4">
+                {item.title}
+              </h3>
+
+              <p className="text-gray-600 leading-relaxed text-sm">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
+
+        {/* STATS */}
+        <div className="border-t border-[#e3dccf] pt-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+
+            <div>
+              <p className="text-4xl font-serif text-[#caa36a] mb-2">10+</p>
+              <p className="text-xs tracking-widest uppercase text-gray-500">
+                Years Experience
+              </p>
+            </div>
+
+            <div>
+              <p className="text-4xl font-serif text-[#caa36a] mb-2">200+</p>
+              <p className="text-xs tracking-widest uppercase text-gray-500">
+                Projects Delivered
+              </p>
+            </div>
+
+            <div>
+              <p className="text-4xl font-serif text-[#caa36a] mb-2">50+</p>
+              <p className="text-xs tracking-widest uppercase text-gray-500">
+                BIM Standards & LODs
+              </p>
+            </div>
+
+            <div>
+              <p className="text-4xl font-serif text-[#caa36a] mb-2">98%</p>
+              <p className="text-xs tracking-widest uppercase text-gray-500">
+                Client Satisfaction
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   );
 };
 
-export default Portfolio;
+export default WhyChooseUs;

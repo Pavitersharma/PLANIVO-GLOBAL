@@ -4,6 +4,8 @@ import Header from "../component/Header";
 import About from "../component/About";
 import Services from "../component/Services";
 import Portfolio from "../component/Portfolio";
+import Testimonials from "../component/Testimonials";
+import ContactFooter from "../component/ContactFooter";
 
 export default function Homepage() {
   return (
@@ -13,6 +15,8 @@ export default function Homepage() {
       <About />
       <Services/>
       <Portfolio/>
+      <Testimonials/>
+      <ContactFooter/>
     </>
   );
 }
