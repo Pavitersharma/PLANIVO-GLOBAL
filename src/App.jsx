@@ -8,6 +8,7 @@ import Homepage from './pages/Homepage'
 import About from './pages/About'
 import { Route, Routes } from 'react-router-dom'
 import Services from './pages/Services'
+import Portfolio from './pages/Portfolio'
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
       <Route   path='/' element={<Homepage/>}/>
     <Route path='/about'  element={ <About/>}/>
     <Route path='/services' element={<Services/>}/>
+    <Route path='/portfolio'  element={<Portfolio/>}/>
     </Routes>
      
 
