@@ -7,6 +7,7 @@ import Hero from './component/Hero'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
 import { Route, Routes } from 'react-router-dom'
+import Services from './pages/Services'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
     <Routes>
       <Route   path='/' element={<Homepage/>}/>
     <Route path='/about'  element={ <About/>}/>
+    <Route path='/services' element={<Services/>}/>
     </Routes>
      
 
