@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../component/Header";
-import team1 from "../assets/about/team1.png"
-import team2 from "../assets/about/team2.png"
+
 import ContactFooter from "../component/ContactFooter";
 
 export default function About() {
@@ -14,28 +13,7 @@ export default function About() {
   ];
 
 
-  const team = [
-    {
-      name: "Sarah Mitchell",
-      role: "Founder & Principal Designer",
-      image: team1,
-    },
-    {
-      name: "James Chen",
-      role: "Senior Interior Designer",
-      image: team2,
-    },
-    {
-      name: "Emma Williams",
-      role: "Project Manager",
-      image: team1,
-    },
-    {
-      name: "Michael Ross",
-      role: "3D Visualization Specialist",
-      image: team2,
-    },
-  ];
+
   return (
     <>
 
@@ -211,63 +189,9 @@ export default function About() {
       </div>
     </section>
 
-    <section className="bg-[#FAF7F2] py-24 md:py-32">
-      <div className="max-w-7xl mx-auto px-4">
+  
 
-        {/* Header */}
-        <div className="text-center mb-20">
-          <p className="text-xs tracking-[0.3em] uppercase text-[#C9A24D] mb-4">
-            Our Team
-          </p>
-
-          <h2 className="text-3xl md:text-5xl font-serif text-gray-900 mb-6">
-            Meet the <span className="italic">Creatives</span>
-          </h2>
-
-          <div className="w-12 h-[1px] bg-[#C9A24D] mx-auto mb-6"></div>
-
-          <p className="max-w-xl mx-auto text-gray-600 text-sm leading-relaxed">
-            A talented team of designers, architects, and project managers
-            dedicated to bringing your vision to life.
-          </p>
-        </div>
-
-        {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-          {team.map((member, index) => (
-            <div key={index} className="text-center group">
-              
-              {/* Image */}
-              <div className="overflow-hidden mb-6">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="
-                    w-full
-                    h-[420px]
-                    object-cover
-                    transition
-                    duration-500
-                    group-hover:scale-105
-                  "
-                />
-              </div>
-
-              {/* Name */}
-              <h3 className="text-lg font-serif text-gray-900">
-                {member.name}
-              </h3>
-
-              {/* Role */}
-              <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">
-                {member.role}
-              </p>
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </section>
+    
     <section className="bg-[#2B2621] py-32 px-4">
       <div className="max-w-4xl mx-auto text-center">
 
