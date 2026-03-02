@@ -172,6 +172,77 @@ export default function Portfolio() {
       </div>
     </section>
 
+
+
+  
+    
+    <section className="bg-[#2B2621] py-20 px-4">
+        {/* FOOTER */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="border-t border-gray-700 pt-24 pb-14 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+              {/* BRAND */}
+              <div>
+                <h3 className="font-serif text-2xl text-white mb-6">
+                  PLANIVO GLOBAL
+                </h3>
+                <p className="text-sm text-gray-400 leading-relaxed mb-8">
+                  Streamlined BIM solutions delivering precision, coordination,
+                  and design clarity across every project stage.
+                </p>
+              </div>
+
+              {/* COMPANY */}
+              <div>
+                <p className="text-xs tracking-widest uppercase text-[#caa36a] mb-6">
+                  Company
+                </p>
+                <ul className="space-y-3 text-sm text-gray-400">
+                  <li>About Us</li>
+                  <li>Our Team</li>
+                  <li>Careers</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+
+              {/* SERVICES */}
+              <div>
+                <p className="text-xs tracking-widest uppercase text-[#caa36a] mb-6">
+                  Services
+                </p>
+                <ul className="space-y-3 text-sm text-gray-400">
+                  <li>BIM Modeling</li>
+                  <li>LOD 100–500</li>
+                  <li>As-Built Models</li>
+                  <li>Renovation BIM</li>
+                </ul>
+              </div>
+
+              {/* RESOURCES */}
+              <div>
+                <p className="text-xs tracking-widest uppercase text-[#caa36a] mb-6">
+                  Resources
+                </p>
+                <ul className="space-y-3 text-sm text-gray-400">
+                  <li>Portfolio</li>
+                  <li>Case Studies</li>
+                  <li>Blog</li>
+                  <li>FAQ</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* COPYRIGHT */}
+            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
+              <p>© 2026 PLANIVO GLOBAL. All rights reserved.</p>
+              <div className="flex gap-6 mt-4 md:mt-0">
+                <span>Privacy Policy</span>
+                <span>Terms of Service</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     
     
     </>
